@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Inherit the Product Template Form View to add fields below Traceability -->
+    <record id="product_template_form_inherit_inventory" model="ir.ui.view">
+        <field name="name">Product Template Form: Add Maintenance Boolean</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Locate the Traceability group and add new group below it -->
+            <xpath expr="//group[@name='traceability']" position="after">
+                <group string="Subject to Maintenance">
+                    <field name="subject_to_maintenance" string="Maintenance"/>
+                    <field name="equipment_id" string="Equipment" context="{'default_product_id': id}" readonly="not subject_to_maintenance" tracking="not serial"/>
+                </group>
+            </xpath>           
+        </field>
+    </record>
+</odoo>

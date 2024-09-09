@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_maintenance_equipment_form" model="ir.ui.view">
+        <field name="name">maintenance.equipment.form</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+        <field name="arch" type="xml">
+            <!-- Add product_id field after partner_ref field -->
+            <xpath expr="//page[@name='product_information']/group/group/field[@name='partner_ref']" position="after">
+                <field name="product_id"/>
+            </xpath>
+
+            <!-- Replace serial_no field with lot_id field -->
+            <xpath expr="//page[@name='product_information']/group/group/field[@name='serial_no']" position="replace">
+                <field name="lot_id" string="Serial Number"/>
+            </xpath>
+            <xpath expr="//page[@name='maintenance']" position="after">
+                <page name="Sub Equipment">
+                    <field name="sub_equipment_ids">
+                        <tree>
+                            <field name="name" string="Equipment"/>
+                            <field name="employee_id" string="Employee"/>
+                            <field name="department_id" string="Department"/>
+                            <field name="assign_date" string="Assigned Date"/>
+                            <field name="lot_id" string="Serial Number"/>
+                            <field name="technician_user_id"/>
+                        </tree>
+                    </field>
+                </page>
+                <page name="All Equipment">
+                    <field name="all_sub_equipment_ids"
+                    readonly="1"
+                    >
+                        <tree>
+                            <field name="name" string="Equipment"/>
+                            <field name="employee_id" string="Employee"/>
+                            <field name="department_id" string="Department"/>
+                            <field name="assign_date" string="Assigned Date"/>
+                            <field name="lot_id" string="Serial Number"/>
+                            <field name="technician_user_id"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>    
+</odoo>

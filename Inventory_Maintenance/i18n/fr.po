@@ -1,0 +1,209 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* Inventory_Maintenance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-09 10:19+0000\n"
+"PO-Revision-Date: 2024-09-09 10:19+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: Inventory_Maintenance
+#. odoo-python
+#: code:addons/Inventory_Maintenance/models/product_template.py:0
+#, python-format
+msgid "A product can only be associated with one equipment."
+msgstr "Un produit ne peut être associé qu'à un seul équipement."
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment__all_sub_equipment_ids
+msgid "All Equipment"
+msgstr "Tout l'équipement"
+
+#. module: Inventory_Maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "All Equipment"
+msgstr "Tout l'équipement"
+
+#. module: Inventory_Maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "Sub Equipment"
+msgstr "Sous-équipement"
+
+#. module: Inventory_Maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "Assigned Date"
+msgstr "Date Assignée"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__create_date
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: Inventory_Maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "Department"
+msgstr "Département"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__display_name
+msgid "Display Name"
+msgstr "Nom d'affichage"
+
+#. module: Inventory_Maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "Employee"
+msgstr "Employé"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__equipment_id
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_product_product__equipment_id
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_product_template__equipment_id
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.product_template_form_inherit_inventory
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "Equipment"
+msgstr "Équipement"
+
+#. module: Inventory_Maintenance
+#. odoo-python
+#: code:addons/Inventory_Maintenance/models/product_template.py:0
+#, python-format
+msgid "Equipment already exists for this product."
+msgstr "L'équipement existe déjà pour ce produit."
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__is_important
+msgid "Important"
+msgstr "Importante"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__write_uid
+msgid "Last Updated by"
+msgstr "Dernière mise à jour par"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__write_date
+msgid "Last Updated on"
+msgstr "Dernière mise à jour le"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment__lot_id
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__lot_id
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_product_product__lot_id
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_product_template__lot_id
+msgid "Lot/Serial Number"
+msgstr "Numéro de lot/série"
+
+#. module: Inventory_Maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.product_template_form_inherit_inventory
+msgid "Maintenance"
+msgstr "Entretien"
+
+#. module: Inventory_Maintenance
+#: model:ir.model,name:Inventory_Maintenance.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "Equipement de maintenance"
+
+#. module: Inventory_Maintenance
+#: model:ir.model,name:Inventory_Maintenance.model_maintenance_equipment_line
+msgid "Maintenance Equipment Line"
+msgstr "Ligne d'équipement de maintenance"
+
+#. module: Inventory_Maintenance
+#. odoo-python
+#: code:addons/Inventory_Maintenance/models/product_template.py:0
+#, python-format
+msgid ""
+"Maintenance can only be enabled for products with 'By Unique Serial Number'"
+msgstr "La maintenance ne peut être activée que pour les produits avec « Par numéro de série unique »."
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__name
+msgid "Name"
+msgstr ""
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields.selection,name:Inventory_Maintenance.selection__maintenance_equipment_line__type__normal
+msgid "Normal"
+msgstr "Nom"
+
+#. module: Inventory_Maintenance
+#: model:ir.model,name:Inventory_Maintenance.model_product_template
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment__product_id
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__product_id
+msgid "Product"
+msgstr "Produit"
+
+#. module: Inventory_Maintenance
+#: model:ir.model,name:Inventory_Maintenance.model_product_product
+msgid "Product Variant"
+msgstr "Variante de produit"
+
+#. module: Inventory_Maintenance
+#. odoo-python
+#: code:addons/Inventory_Maintenance/models/product_maintenance.py:0
+#, python-format
+msgid "Product is required."
+msgstr "Le produit est requis."
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment__serial_no
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.view_maintenance_equipment_form
+msgid "Serial Number"
+msgstr "Numéro de série"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment__sub_equipment_ids
+msgid "Sub Equipment"
+msgstr "Sous-équipement"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields.selection,name:Inventory_Maintenance.selection__maintenance_equipment_line__type__sub
+msgid "Sub-Equipment"
+msgstr "Sous-équipement"
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_product_product__subject_to_maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_product_template__subject_to_maintenance
+#: model_terms:ir.ui.view,arch_db:Inventory_Maintenance.product_template_form_inherit_inventory
+msgid "Subject to Maintenance"
+msgstr "Sous réserve d'entretien"
+
+#. module: Inventory_Maintenance
+#. odoo-python
+#: code:addons/Inventory_Maintenance/models/product_template.py:0
+#, python-format
+msgid "Subject to Maintenance must be checked to create equipment."
+msgstr "Sous réserve de maintenance, il faut cocher pour créer un équipement."
+
+#. module: Inventory_Maintenance
+#. odoo-python
+#: code:addons/Inventory_Maintenance/models/maintenance_equipment.py:0
+#, python-format
+msgid ""
+"This product already has an equipment and cannot have more than one if "
+"tracking is not 'By Unique Serial Number'."
+msgstr "Ce produit dispose déjà d'un équipement et ne peut en avoir plus d'un si "
+"le suivi ne s'effectue pas par numéro de série unique."
+
+#. module: Inventory_Maintenance
+#: model:ir.model.fields,field_description:Inventory_Maintenance.field_maintenance_equipment_line__type
+msgid "Type"
+msgstr "Taper"

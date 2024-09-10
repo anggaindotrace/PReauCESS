@@ -15,7 +15,7 @@
                 <field name="lot_id" string="Serial Number"/>
             </xpath>
             <xpath expr="//page[@name='maintenance']" position="after">
-                <page name="Sub Equipment">
+                <page string="Sub Equipment" name="sub_equipment">
                     <field name="sub_equipment_ids">
                         <tree>
                             <field name="name" string="Equipment"/>
@@ -27,7 +27,7 @@
                         </tree>
                     </field>
                 </page>
-                <page name="All Equipment">
+                <page string="All Equipment" name="all_quipment">
                     <field name="all_sub_equipment_ids"
                     readonly="1"
                     >
